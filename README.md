@@ -40,3 +40,4 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ```bash
 git clone https://github.com/your-username/EV-Routing-Problem.git
 cd EV-Routing-Problem
+pip install -r requirements.txt
