@@ -44,6 +44,10 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ### Install required Python dependencies:
 ```bash
 pip install -r requirements.txt
+## CSS Example
+
+Here’s a basic CSS example to style a web-based dashboard for the EVRP:
+```css
 body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
