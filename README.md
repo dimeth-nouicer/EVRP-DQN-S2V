@@ -44,3 +44,27 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ### Install required Python dependencies:
 ```bash
 pip install -r requirements.txt
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
