@@ -38,14 +38,6 @@ Graph embeddings encode the EV routing problem into a feature space for reinforc
 
 ### Reinforcement Learning: Double Deep Q-Network (DDQN)
 The decision-making process is modeled as a Markov Decision Process (MDP). The agent learns a policy by maximizing cumulative rewards through Q-learning. The state space includes vertex coordinates, battery state, and vehicle load, while actions include selecting customers or charging stations.
-
-## Installation
-
-### Install required Python dependencies:
-```bash
-pip install -r requirements.txt
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 This project is designed to help optimize routes for Electric Vehicles (EVs) using Reinforcement Learning (RL) techniques. Below are examples of how you can use this project:
@@ -54,9 +46,16 @@ This project is designed to help optimize routes for Electric Vehicles (EVs) usi
 You can train the model using the provided dataset for Electric Vehicle Routing Problem (EVRP). To do this, run the following command:
 ```bash
 python train_model.py
+```
+
+## Installation
+
+### Install required Python dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
