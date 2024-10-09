@@ -36,8 +36,7 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 
 ## Installation
 
-### Clone the repository:
+### Install required Python dependencies:
 ```bash
-git clone https://github.com/your-username/EV-Routing-Problem.git
-cd EV-Routing-Problem
 pip install -r requirements.txt
+
