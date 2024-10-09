@@ -34,7 +34,7 @@ Graph embeddings encode the EV routing problem into a feature space for reinforc
 
 **Methodology Visualization:**
 
-![Methodology Image]methodology.jpg  <!-- Replace with the actual image URL -->
+![Methodology Image] (methodology.jpg)  <!-- Replace with the actual image URL -->
 
 ### Reinforcement Learning: Double Deep Q-Network (DDQN)
 The decision-making process is modeled as a Markov Decision Process (MDP). The agent learns a policy by maximizing cumulative rewards through Q-learning. The state space includes vertex coordinates, battery state, and vehicle load, while actions include selecting customers or charging stations.
