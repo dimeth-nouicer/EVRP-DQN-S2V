@@ -45,10 +45,36 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ```bash
 pip install -r requirements.txt
 
-## Usage
+<!-- LICENSE -->
+## License
 
-### Train the Model
-To train the model on EVRP data, run the following command:
-```bash
-python train_model.py
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+Contributions are welcome and appreciated! To contribute:
+
+1. **Fork the repository**: Click on the "Fork" button on the repository's page to create a copy of the repository in your own GitHub account.
+2. **Clone your forked repository** to your local machine:
+    ```bash
+    git clone https://github.com/your-username/EV-Routing-Problem.git
+    cd EV-Routing-Problem
+    ```
+3. **Create a new branch** for your feature or bugfix:
+    ```bash
+    git checkout -b feature-branch
+    ```
+4. **Make your changes** in your preferred code editor.
+5. **Commit your changes** with a descriptive message:
+    ```bash
+    git commit -m "Added a new feature"
+    ```
+6. **Push your changes** to your GitHub repository:
+    ```bash
+    git push origin feature-branch
+    ```
+7. **Open a Pull Request**: Go to your repository on GitHub, and click on "New Pull Request" to submit your changes for review.
 
