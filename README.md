@@ -79,7 +79,7 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 pip install -r requirements.txt
 ```
 
-## Usage
+## <b>Usage</b>
 
 This project is designed to help optimize routes for Electric Vehicles (EVs) using Reinforcement Learning (RL) techniques. Below are examples of how you can use this project:
 
@@ -92,7 +92,7 @@ python train_model.py
 
 
 
-## License
+## <b>License</b>
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -100,7 +100,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## <b>Contributing</b>
 Contributions are welcome and appreciated! To contribute:
 
 1. **Fork the repository**: Click on the "Fork" button on the repository's page to create a copy of the repository in your own GitHub account.
