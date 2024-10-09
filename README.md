@@ -45,10 +45,10 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ```bash
 pip install -r requirements.txt
 
-### Explanation:
-- The `## Usage` heading defines the start of the usage section.
-- Each part of the usage (Train the Model, Run Simulation, Visualize Results) is separated by `###` subheadings.
-- The commands (`python train_model.py`, `python simulate_routes.py`, and `python visualize_routes.py`) are wrapped in a code block using triple backticks ` ```bash ``` ` to indicate they are bash commands.
+## Usage
 
-You can copy this directly into your **README.md** file to have the **Usage**, **Run Simulation**, and **Visualize Results** sections properly formatted in markdown. Let me know if you need anything else!
+### Train the Model
+To train the model on EVRP data, run the following command:
+```bash
+python train_model.py
 
