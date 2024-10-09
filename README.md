@@ -18,7 +18,7 @@ This project proposes a Reinforcement Learning-based approach for solving the El
 
 **Project Visualization:**
 
-![Project Overview Image](path/to/your/project-overview-image.png)  <!-- Replace with the actual image URL -->
+![Project Overview Image](Picture1.jpg)  <!-- Replace with the actual image URL -->
 
 ## Features
 - Optimization of EV fleet routes with time window constraints.
