@@ -44,31 +44,11 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ### Install required Python dependencies:
 ```bash
 pip install -r requirements.txt
-## CSS Example
 
-Here’s a basic CSS example to style a web-based dashboard for the EVRP:
-```css
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-}
+### Explanation:
+- The `## Usage` heading defines the start of the usage section.
+- Each part of the usage (Train the Model, Run Simulation, Visualize Results) is separated by `###` subheadings.
+- The commands (`python train_model.py`, `python simulate_routes.py`, and `python visualize_routes.py`) are wrapped in a code block using triple backticks ` ```bash ``` ` to indicate they are bash commands.
 
-h1 {
-    color: #333;
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
+You can copy this directly into your **README.md** file to have the **Usage**, **Run Simulation**, and **Visualize Results** sections properly formatted in markdown. Let me know if you need anything else!
 
