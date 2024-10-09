@@ -45,6 +45,17 @@ The decision-making process is modeled as a Markov Decision Process (MDP). The a
 ```bash
 pip install -r requirements.txt
 
+<!-- USAGE EXAMPLES -->
+## Usage
+
+This project is designed to help optimize routes for Electric Vehicles (EVs) using Reinforcement Learning (RL) techniques. Below are examples of how you can use this project:
+
+### Example 1: Train the Model
+You can train the model using the provided dataset for Electric Vehicle Routing Problem (EVRP). To do this, run the following command:
+```bash
+python train_model.py
+
+
 <!-- LICENSE -->
 ## License
 
