@@ -53,7 +53,7 @@ To get started with the PowerTrip project, follow these steps:
 
    ```bash
    git clone https://github.com/imenhbibi/Power_Trip.git
-   cd PowerTrip
+   cd Power_Trip
    ```
 
 2. Each module has its own specific installation and setup instructions detailed in the respective `ReadMe.md` file located in:
