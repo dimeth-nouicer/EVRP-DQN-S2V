@@ -52,13 +52,12 @@ Run the notebook named `1_simulation_without_control.ipynb` located in the `2_Ch
 ### 2. Smart Control Simulation
 Run the notebook named `2_smart_control.ipynb` in the `2_Charging_Control` folder to apply smart control and optimize two objectives:
 - **Objective 1 (Grid Impact Minimization)**: Minimize the Phasing Unbalance Index (PUI) at the buses where CPs are installed:
-    $$
-    \underset{\underset{1 \leq i \leq 3,\ 1 \leq p \leq 12}{P_{\mathrm{CP}_i}(t),\ P_{\mathrm{PV}_{p}}(t)}}{min} \sum_{i=1}^{3} \mathrm{PUI}_{\mathrm{bus\_CP}_i}^2(t)
-    $$
+
+![image](https://github.com/user-attachments/assets/1f27487e-d4ec-4cb2-aaae-6bd3c5e169d4)
+
 - **Objective 2 (PV Power Maximization)**: Minimize the curtailment of available PV power:
-    $$
-    \underset{\underset{1 \leq p \leq 12}{\ P_{\mathrm{PV}_{p}}(t)}}{min} \sum_{p=1}^{12} \left[P_{\mathrm{PV}_{\mathrm{actual}}}(t) - P_{\mathrm{PV}_p}(t)\right]^2
-    $$
+
+![image](https://github.com/user-attachments/assets/5f9f2fcf-4cc9-4306-bb70-edf612a295d2)
 
 These objectives are conflicting, producing a set of Pareto-optimal solutions. We select a solution that balances minimizing the grid impact of EV charging and maximizing PV power usage.
 
