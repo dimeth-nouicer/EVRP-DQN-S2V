@@ -52,7 +52,7 @@ To get started with the PowerTrip project, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/PowerTrip.git
+   git clone https://github.com/imenhbibi/Power_Trip.git
    cd PowerTrip
    ```
 
