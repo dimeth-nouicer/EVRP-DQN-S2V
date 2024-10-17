@@ -1,0 +1,9 @@
+New Load.PV_1  phases=1 kV=0.23 kW=0  pf=1 bus1=162.1 
+New Load.PV_2  phases=1 kV=0.23 kW=0  pf=1 bus1=162.2 
+New Load.PV_3  phases=1 kV=0.23 kW=0  pf=1 bus1=162.3 
+New Load.PV_4  phases=1 kV=0.23 kW=0  pf=1 bus1=3164.1 
+New Load.PV_5  phases=1 kV=0.23 kW=0  pf=1 bus1=3164.2 
+New Load.PV_6  phases=1 kV=0.23 kW=0  pf=1 bus1=3164.3 
+New Load.PV_7  phases=1 kV=0.23 kW=0  pf=1 bus1=2691.1 
+New Load.PV_8  phases=1 kV=0.23 kW=0  pf=1 bus1=2691.2 
+New Load.PV_9  phases=1 kV=0.23 kW=0  pf=1 bus1=2691.3 

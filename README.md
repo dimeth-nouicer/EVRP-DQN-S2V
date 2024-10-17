@@ -1,126 +1,66 @@
-<h1 align="center"><b>Electric Vehicle Routing Problem with Reinforcement Learning</b></h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8-blue.svg">
-  <img src="https://img.shields.io/badge/Reinforcement-Learning-orange.svg">
-  <img src="https://img.shields.io/badge/EV-Routing-green.svg">
-  <img src="https://img.shields.io/github/license/your-repo-name/repo-name?style=flat">
-</p>
+# PowerTrip: AI-Powered Smart Transportation Solutions
 
-<p align="center">
-  <img src="Picture1.jpg" alt="Project Overview" width="60%">
-</p>
+PowerTrip is a startup that specializes in providing intelligent transportation solutions, focusing on optimizing routes and managing electric vehicle (EV) charging. By leveraging artificial intelligence (AI), PowerTrip ensures seamless journeys, helps drivers and fleets save time, reduces costs, and minimizes environmental impact.
 
-<p align="center"><b>This project addresses the challenges faced by fleet managers transitioning from Internal Combustion Engine vehicles to Electric Vehicles (EVs). The Electric Vehicle Routing Problem (EVRP) is solved using a novel Reinforcement Learning approach combined with graph-based modeling, specifically using Structure2vec and Double Deep Q-Network (DDQN).</b></p>
+## Project Overview
 
----
+This repository contains the core code for PowerTrip's AI-powered platform, which is divided into two key components:
+1. **Electric Vehicle Routing**: AI-based algorithms to optimize routing, ensuring the most efficient paths for electric vehicles, accounting for charging needs and minimizing overall journey time and energy consumption.
+2. **Smart Charging**: Intelligent management of EV charging to maximize efficiency and minimize energy consumption.
 
-## <b>Table of Contents</b>
+### Features
 
-- [**Project Overview**](#project-overview)
-- [**Features**](#features)
-- [**Methodology**](#methodology)
-- [**Installation**](#installation)
-- [**Usage**](#usage)
-- [**Experiments**](#experiments)
-- [**Contributing**](#contributing)
-- [**License**](#license)
+- **AI-Powered Route Optimization**: Dynamically adjusts routes based on real-time data to ensure efficient and eco-friendly travel.
+- **Smart EV Charging Management**: Predicts optimal charging times and locations, balancing cost savings and travel time.
+- **Energy Efficiency**: Focuses on reducing the overall environmental impact by optimizing routes and energy use.
+- **Driver & Fleet Benefits**: Designed to help both individual drivers and fleet operators.
 
----
+## Repository Structure
 
-## <b>Project Overview</b>
-
-This project proposes a Reinforcement Learning-based approach for solving the Electric Vehicle Routing Problem with Time Windows (EVRPTW). The solution optimizes route planning for EV fleets, considering constraints such as charging stations, battery management, and time windows. The model leverages graph embeddings using **Structure2vec** and trains a **Double Deep Q-Network (DDQN)** to minimize travel distance while adhering to customer time windows.
-
-<p align="center">
-  <img src="methodology.jpg" alt="Methodology" width="70%">
-</p>
-
----
-
-## <b>Features</b>
-
-<table>
-<tr>
-  <td>✔ Optimization of EV fleet routes with time window constraints</td>
-</tr>
-<tr>
-  <td>✔ Integration of battery state of charge (SoC) and charging station availability</td>
-</tr>
-<tr>
-  <td>✔ Graph embeddings using Structure2vec for network representation</td>
-</tr>
-<tr>
-  <td>✔ Reinforcement Learning-based approach using Double Deep Q-Network (DDQN)</td>
-</tr>
-<tr>
-  <td>✔ Scalable solution for large EV fleets</td>
-</tr>
-</table>
-
----
-
-## <b>Methodology</b>
-
-### <b>Graph Embeddings with Structure2vec (S2V)</b>
-
-Graph embeddings encode the EV routing problem into a feature space for reinforcement learning. We use Structure2vec to represent customers, charging stations, and the depot in a graph.
-
-### <b>Reinforcement Learning: Double Deep Q-Network (DDQN)</b>
-
-The decision-making process is modeled as a Markov Decision Process (MDP). The agent learns a policy by maximizing cumulative rewards through Q-learning. The state space includes vertex coordinates, battery state, and vehicle load, while actions include selecting customers or charging stations.
-
----
-
-## <b>Installation</b>
-
-### Install required Python dependencies:
-```bash
-pip install -r requirements.txt
+```
+PowerTrip/
+│
+├── Routing_module/             # Core modules for solving EV Routing 
+│   ├── dataset/                # Dataset used in test
+│   ├── nets/                   # Model for route optimization
+│   ├── pretrained/             # Pretrained models for routing algorithms
+│   ├── utils/                  # Utility functions and helper scripts
+│   └── evrp.ipynb              # Main Jupyter Notebook for EVRP implementation
+│   └── ReadMe.md               # Additional documentation to run the routing module
+│
+├── Smart_Charging/             # Code for intelligent EV charging management
+│   ├── 1_Grid_Model/           # Model to simulate a full power distribution system
+│   ├── 2_Charging_Control/     # Control and optimization algorithms for smart charging
+│   └── ReadMe.md               # Additional documentation to run the smart charging module
+│
+└── README.md                 # This README file
 ```
 
-## <b>Usage</b>
+## Module Independence
 
-This project is designed to help optimize routes for Electric Vehicles (EVs) using Reinforcement Learning (RL) techniques. Below are examples of how you can use this project:
+The **Smart Charging** and **Routing** modules are designed to work independently. It is preferable that each module is tested separately, as they do not rely on one another for their core functionality.
 
-### Example 1: Train the Model
-You can train the model using the provided dataset for Electric Vehicle Routing Problem (EVRP). To do this, run the following command:
-```bash
-python train_model.py
-```
+For best results:
+- Test the **Smart Charging** module for intelligent charging management.
+- Test the **Routing** module directly through the Jupyter notebook (`evrp.ipynb`), which provides an interactive environment to run simulations and evaluate results.
 
+### Installation
 
+To get started with the PowerTrip project, follow these steps:
 
+1. Clone this repository:
 
-## <b>License</b>
+   ```bash
+   git clone https://github.com/your-username/PowerTrip.git
+   cd PowerTrip
+   ```
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+2. Each module has its own specific installation and setup instructions detailed in the respective `ReadMe.md` file located in:
+   - **Smart Charging**: `Smart_Charging/ReadMe.md`
+   - **EVRP**: `Routing module/ReadMe.md`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Usage
 
-
-<!-- CONTRIBUTING -->
-## <b>Contributing</b>
-Contributions are welcome and appreciated! To contribute:
-
-1. **Fork the repository**: Click on the "Fork" button on the repository's page to create a copy of the repository in your own GitHub account.
-2. **Clone your forked repository** to your local machine:
-    ```bash
-    git clone https://github.com/your-username/EV-Routing-Problem.git
-    cd EV-Routing-Problem
-    ```
-3. **Create a new branch** for your feature or bugfix:
-    ```bash
-    git checkout -b feature-branch
-    ```
-4. **Make your changes** in your preferred code editor.
-5. **Commit your changes** with a descriptive message:
-    ```bash
-    git commit -m "Added a new feature"
-    ```
-6. **Push your changes** to your GitHub repository:
-    ```bash
-    git push origin feature-branch
-    ```
-7. **Open a Pull Request**: Go to your repository on GitHub, and click on "New Pull Request" to submit your changes for review.
-
+- **Smart Charging**: Navigate to the `smart_charging/` folder for modules related to charging management.
+- **Routing Solver**: Navigate to the `Routing_module/` folder to explore routing for electric vehicles.
